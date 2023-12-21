@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Formulario 4 Mario</title>
+</head>
+<body>
+    <h3>Información sobre el producto</h3>
+
+    <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required maxlength="30">
+        <br><br>
+
+        <label for="Descripcion">Descripcion</label> <br/>
+        <textarea id="Descripcion" name="Descripcion" cols="40" rows="5"></textarea> 
+<br><br>
+        <label for="Foto">Foto:</label>
+        <input type="text" id="Foto" name="Foto" required maxlength="30">
+        <input type="file" id="foto" name="foto">
+<br><br>
+<input type="checkbox" id="boletin" name="boletin">
+<label for="boletin">Añadir contador de visitas</label>
+<br><br>
+Datos Economicos
+<br><br>
+<label for="Precio">Precio</label>
+<input type="text" id="Precio" name="Precio" required maxlength="30">
+<label for="Precio">€</label>
+
+<label for="Impuestos">Impuestos</label>
+<select id="Impuestos" name="Impuestos">
+    <option value="1">4%</option>
+    <option value="1">7%</option>
+    <option value="1">16%</option>
+    <option value="1">25%</option>
+</select>
+<br><br>
+
+<label>Promoción:</label>
+        <br>
+        <input type="radio" id="Ninguno" name="Ninguno" value="Ninguno" required>
+        <label for="t">Ninguno</label>
+        <br>
+        <input type="radio" id="Transporte" name="Transporte" value="Transporte" required>
+        <label for="Transporte">Transporte Gratuito</label>
+        <br>
+        <input type="radio" id="Descuento" name="Descuento" value="Descuento" required>
+        <label for="Descuento">Descuento 5%</label>
+       
+
+
+</body>
+</html>

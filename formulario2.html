@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Mario</title>
+</head>
+<body>
+
+        Dades Personals
+
+    <form method="post" action="/send/">
+        <label for="nombre">Nom:</label>
+        <input type="text" id="nom" name="nom">
+
+        <label for="cognoms">Cognoms:</label>
+        <input type="text" id="cognoms" name="cognoms">
+        <br><br>
+
+        <label for="DNI">DNI:</label>
+        <input type="text" id="DNI" name="DNI">
+        <br><br>
+
+        <label for="Username">Username:</label>
+        <input type="text" id="Username" name="Username">
+
+        <label for="Clau">Clau:</label>
+        <input type="password" id="Clau" name="Clau">
+
+        <label for="RClau">Repetir Clau:</label>
+        <input type="password" id="RClau" name="RClau">
+        <br><br>
+
+        <label for="Correo">E-Correu:</label>
+        <input type="email" id="Correo" name="Correo">
+        <br><br>
+
+        <label for="edad">Selecciona la opción deseada:</label>
+        <select id="edad" name="edad">
+            <option value="1">Menor que 16 anys</option>
+            <option value="2">Major de 16 anys</option>
+        </select>
+        <br><br>
+
+        <label>Sexo:</label>
+        <br>
+        <input type="radio" id="hombre" name="sexo" value="hombre" required>
+        <label for="hombre">Home</label>
+         
+        <input type="radio" id="mujer" name="sexo" value="mujer" required>
+        <label for="mujer">Dona</label>
+
+        <br><br>
+        <label for="Clau">Codi Pais:</label>
+        <input type="password" id="ClauP" name="ClauP">
+
+        <label for="RClau">Codi ZIP:</label>
+        <input type="password" id="ZClau" name="ZClau">
+
+        <br><br>
+
+        <label for="foto">Imatge Personal:</label>
+        <input type="file" id="foto" name="foto">
+        <br><br>
+
+        <hr>
+
+        <p>Altres dades d'interes</p>
+
+        <p>Interessos:</p>
+        <label><input type="checkbox" id="cbox1" value="CSS" name="interessos[]"/> CSS</label>
+        <label><input type="checkbox" id="cbox2" value="HTML5" name="interessos[]"/> HTML5</label>
+        <label><input type="checkbox" id="cbox3" value="JavaScript" name="interessos[]"/> JavaScript</label>
+
+        <p>Coneiximents:</p>
+        <label><input type="checkbox" id="cbox4" value="Xarxes Socials" name="coneiximents[]"/> Xarxes Socials</label>
+        <label><input type="checkbox" id="cbox5" value="Programació HTML" name="coneiximents[]"/> Programació HTML</label>
+        <label><input type="checkbox" id="cbox6" value="Programació CSS" name="coneiximents[]"/> Programació CSS</label>
+        <label><input type="checkbox" id="cbox7" value="Disseny" name="coneiximents[]"/> Disseny</label>
+        
+        <br><br>
+
+        <label for="comentarios">Comentaris</label> <br/>
+        <textarea id="comentarios" name="comentarios" cols="40" rows="5"></textarea> 
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Esborrar">
+    </form>
+
+</body>
+</html>
